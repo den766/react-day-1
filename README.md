@@ -1,16 +1,40 @@
-# React + Vite
+# React Day 1 — Mental Model
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my first experiment while learning React.
 
-Currently, two official plugins are available:
+## Goal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Understand the core React idea:
 
-## React Compiler
+UI = f(state)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Meaning the UI is simply a function of the current state.
 
-## Expanding the ESLint configuration
+When state changes, React re-runs the component and calculates the updated UI automatically.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Experiment
+
+Built a small counter using `useState` to observe:
+
+* component re-rendering
+* state-driven UI updates
+* how React recalculates UI after state changes
+
+## Key Observations
+
+When the button is clicked:
+
+1. state updates
+2. React re-runs the component
+3. React calculates the new UI
+4. only the changed DOM parts update
+
+Console logging was used to observe component re-renders.
+
+## Next Steps
+
+Continue exploring:
+
+* props
+* list rendering with `map()`
+* event handling
