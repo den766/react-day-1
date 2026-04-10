@@ -1,7 +1,7 @@
-import Day1Counter from "./experiments/Day1Counter";
-import Footer from "./experiments/noteAppComponents/Footer";
-import Header from "./experiments/noteAppComponents/Header";
-import NoteList from "./experiments/noteAppComponents/noteList";
+import Day1Counter from "./experiments/day1-counter/Day1Counter";
+import Footer from "./experiments/day2-components/Footer";
+import Header from "./experiments/day2-components/Header";
+import NoteList from "./experiments/day2-components/noteList";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       {/* <Day1Counter /> */}
       <Header />
       <NoteList />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
