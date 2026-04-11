@@ -25,7 +25,7 @@ function RenderNames() {
 
       <ul>
         {products.map((product) => {
-          return <li>{product}</li>;
+          return <li key={product}>{product}</li>;
         })}
       </ul>
 

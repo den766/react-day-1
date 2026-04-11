@@ -5,6 +5,7 @@ import NoteList from "./experiments/day2-components/noteList";
 import Demojsx from "./experiments/day3-jsx/Tutorial";
 import Name from "./experiments/day3-jsx/Practice";
 import RenderNames from "./experiments/day3-jsx/render";
+import DebugExercise from "./experiments/day3-jsx/DebuggingExercise";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* <Demojsx />
       <Name /> */}
       <RenderNames />
+      <DebugExercise/>
       <Footer />
     </div>
   );
