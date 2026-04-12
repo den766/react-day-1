@@ -1,8 +1,9 @@
-function Notecard2({title, category}) {
+function Notecard2({title,description, priority }) {
   return (
     <>
       <h1>{title}</h1>
-      <p>{category}</p>
+      <p>{description}</p>
+      <p>{priority}</p>
     </>
   );
 }

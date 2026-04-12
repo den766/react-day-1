@@ -8,6 +8,8 @@ import RenderNames from "./experiments/day3-jsx/render";
 import DebugExercise from "./experiments/day3-jsx/DebuggingExercise";
 import Notecard2 from "./experiments/day4-props/notecardprops";
 import ProductCard from "./experiments/day4-props/productCard";
+import NoteList2 from "./experiments/day4-props/noteList2";
+
 
 
 function App() {
@@ -20,13 +22,14 @@ function App() {
       <Name /> */}
       {/* <RenderNames />
       <DebugExercise/> */}
-      <Notecard2 title="Learn React" category="Programming"/>
+      {/* <Notecard2 title="Learn React" category="Programming"/>
       <Notecard2 title="Learn Nodejs"/>
       <Notecard2 title="Learn Arrays"/>
 
       <ProductCard title="Laptop" price="100000" rating="4.5"/>
       <ProductCard title="Iphone 17" price="80000" rating="4.7"/>
-      <ProductCard title="bag" price="1000" rating="4"/>
+      <ProductCard title="bag" price="1000" rating="4"/> */}
+      <NoteList2/>
       <Footer />
     </div>
   );
