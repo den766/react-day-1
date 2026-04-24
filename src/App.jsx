@@ -18,7 +18,7 @@ import RandomNumber from "./experiments/week1/day6-events/random";
 import CounterRevise from "./experiments/week1/day7-revision/revision";
 import NoteListRevise from "./experiments/week1/day7-revision/noteListRevise";
 import TogglemsgRevise from "./experiments/week1/day7-revision/togglemesage";
-import TaskInputForm from "./experiments/week1/week2/day1comparchitecture/taskinput";
+import TaskInputForm from "./experiments/week1/week2/day1comparchitecture/TaskInput";
 
 
 function App() {

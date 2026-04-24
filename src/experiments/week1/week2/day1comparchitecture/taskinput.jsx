@@ -1,11 +1,13 @@
 import { useState } from "react";
 
-function TaskInputForm({onAddTask}) {
+
+function TaskInputForm({ onAddTask }) {
   const [input, setInput] = useState("");
   return (
     <>
       <div className="input-section">
         <input
+          className="input"
           type="text"
           placeholder="Enter task"
           value={input}
@@ -13,17 +15,16 @@ function TaskInputForm({onAddTask}) {
         />
 
         <button
+        className="btn"
           onClick={() => {
             if (input.trim() === "") return;
 
-            onAddTask(input); // send to parent
-            setInput(""); // clear input
-          }}    
+            onAddTask(input);
+            setInput(""); 
+          }}
         >
           Add
         </button>
-
-        <button id="addBtn">Add</button>
       </div>
     </>
   );
