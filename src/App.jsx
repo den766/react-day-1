@@ -25,7 +25,8 @@ import CounterControls from "./experiments/week1/week2/day3-liftingstateup/count
 import CounterDisplay from "./experiments/week1/week2/day3-liftingstateup/counterDisplay";
 import SubApp from "./experiments/week1/week2/day3-liftingstateup/stateup";
 import NoteApp from "./experiments/week1/week2/day3-liftingstateup/mininoteAppSearch/noteApp";
-
+import ControlledInput from "./experiments/week1/week2/day4-statedrivenInputs/controlledInput";
+import FormHandling from "./experiments/week1/week2/day4-statedrivenInputs/formhandling";
 
 function App() {
 
@@ -67,7 +68,7 @@ function App() {
       <TogglemsgRevise/> */}
       {/* <TaskInputForm/> */}
       {/* <Footer /> */}
-      <h1>Task Manager</h1>
+      {/* <h1>Task Manager</h1> */}
 
       {/* <TaskInputForm onAddTask={addTask} />
       <TaskList tasks={tasks} onDeleteTask={deleteTask}/>
@@ -75,7 +76,9 @@ function App() {
       
 
        {/* <SubApp/> */}
-       <NoteApp/>
+       {/* <NoteApp/> */}
+       {/* <ControlledInput/> */}
+       <FormHandling/>
     </div>
   );
 }
