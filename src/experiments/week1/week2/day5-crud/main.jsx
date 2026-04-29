@@ -27,12 +27,16 @@ function App2() {
     );
   }
 
+  function editNote(id, updatedNote) {
+    setNote(notes.map((note) => (note.id === id ? updatedNote : note)));
+  }
+
   console.log(notes);
 
   return (
     <>
       <AddNote1 addNote={addNote} />
-      <ShowNoteList notes={notes} onDeleteNote={deleteNote} />
+      <ShowNoteList notes={notes} onDeleteNote={deleteNote} onEditNote={editNote}/>
     </>
   );
 }
