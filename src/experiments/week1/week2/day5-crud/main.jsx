@@ -1,16 +1,21 @@
 import { useState } from "react";
 import AddNote1 from "./addnote";
+import ShowNoteList from "./shownotelist";
 
 function App2() {
   const [notes, setNote] = useState([]);
 
   function addNote(title, desc) {
     const newNOte = {
+      id : Date.now(),
       title,
       desc,
     };
 
-    setNote([...notes , newNOte]);
+    // notes.push(newNOte);
+
+    // setNote(notes);
+    setNote([...notes, newNOte]);
     console.log(notes);
   }
 
@@ -19,6 +24,7 @@ function App2() {
   return (
     <>
       <AddNote1 addNote={addNote} />
+      <ShowNoteList notes={notes}/>
     </>
   );
 }
