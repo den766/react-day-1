@@ -7,7 +7,7 @@ function App2() {
 
   function addNote(title, desc) {
     const newNOte = {
-      id : Date.now(),
+      id: Date.now(),
       title,
       desc,
     };
@@ -19,12 +19,20 @@ function App2() {
     console.log(notes);
   }
 
+  function deleteNote(id) {
+    setNote(
+      notes.filter((note) => {
+        return note.id !== id;
+      }),
+    );
+  }
+
   console.log(notes);
 
   return (
     <>
       <AddNote1 addNote={addNote} />
-      <ShowNoteList notes={notes}/>
+      <ShowNoteList notes={notes} onDeleteNote={deleteNote} />
     </>
   );
 }
