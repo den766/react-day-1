@@ -27,6 +27,7 @@ import SubApp from "./experiments/week1/week2/day3-liftingstateup/stateup";
 import NoteApp from "./experiments/week1/week2/day3-liftingstateup/mininoteAppSearch/noteApp";
 import ControlledInput from "./experiments/week1/week2/day4-statedrivenInputs/controlledInput";
 import FormHandling from "./experiments/week1/week2/day4-statedrivenInputs/formhandling";
+import App2 from "./experiments/week1/week2/day5-crud/main";
 
 function App() {
 
@@ -78,7 +79,8 @@ function App() {
        {/* <SubApp/> */}
        {/* <NoteApp/> */}
        {/* <ControlledInput/> */}
-       <FormHandling/>
+       {/* <FormHandling/> */}
+       <App2/>
     </div>
   );
 }
